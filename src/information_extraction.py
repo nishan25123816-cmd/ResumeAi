@@ -29,13 +29,10 @@ def _get_nlp():
     if _NLP is None:
         try:
             _NLP = spacy.load("en_core_web_sm")
-        except OSError:
-            import subprocess
-            subprocess.run(
-                ["python", "-m", "spacy", "download", "en_core_web_sm"],
-                check=True,
-            )
-            _NLP = spacy.load("en_core_web_sm")
+        except OSError as exc:
+            raise RuntimeError(
+                "spaCy model 'en_core_web_sm' is missing. Install project requirements and redeploy."
+            ) from exc
     return _NLP
 
 
