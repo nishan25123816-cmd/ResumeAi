@@ -1,0 +1,89 @@
+{
+  "best_model_name": "Random Forest",
+  "best_model_file": "/home/nishan/Downloads/nlp/models/best_classifier/best_model.pkl",
+  "tfidf_vectorizer_file": "/home/nishan/Downloads/nlp/models/tfidf_vectorizer.pkl",
+  "label_encoder_file": "/home/nishan/Downloads/nlp/models/label_encoder.pkl",
+  "n_classes": 24,
+  "classes": [
+    "ACCOUNTANT",
+    "ADVOCATE",
+    "AGRICULTURE",
+    "APPAREL",
+    "ARTS",
+    "AUTOMOBILE",
+    "AVIATION",
+    "BANKING",
+    "BPO",
+    "BUSINESS-DEVELOPMENT",
+    "CHEF",
+    "CONSTRUCTION",
+    "CONSULTANT",
+    "DESIGNER",
+    "DIGITAL-MEDIA",
+    "ENGINEERING",
+    "FINANCE",
+    "FITNESS",
+    "HEALTHCARE",
+    "HR",
+    "INFORMATION-TECHNOLOGY",
+    "PUBLIC-RELATIONS",
+    "SALES",
+    "TEACHER"
+  ],
+  "n_train": 1738,
+  "n_val": 372,
+  "n_test": 373,
+  "validation_results": {
+    "Logistic Regression": {
+      "accuracy": 0.6424731182795699,
+      "macro_precision": 0.601890236657716,
+      "macro_recall": 0.5929704520697169,
+      "macro_f1": 0.5824676669765502,
+      "weighted_precision": 0.6426842611134491,
+      "weighted_recall": 0.6424731182795699,
+      "weighted_f1": 0.6275324893656882,
+      "split": "Validation"
+    },
+    "Naive Bayes": {
+      "accuracy": 0.5456989247311828,
+      "macro_precision": 0.5366763316839743,
+      "macro_recall": 0.5015693082788671,
+      "macro_f1": 0.4810922216770239,
+      "weighted_precision": 0.5681072168674286,
+      "weighted_recall": 0.5456989247311828,
+      "weighted_f1": 0.5182896185728219,
+      "split": "Validation"
+    },
+    "Linear SVM": {
+      "accuracy": 0.6935483870967742,
+      "macro_precision": 0.6995907900311252,
+      "macro_recall": 0.6616966230936819,
+      "macro_f1": 0.6658452406582254,
+      "weighted_precision": 0.7010882189596871,
+      "weighted_recall": 0.6935483870967742,
+      "weighted_f1": 0.6871794506033694,
+      "split": "Validation"
+    },
+    "Random Forest": {
+      "accuracy": 0.7123655913978495,
+      "macro_precision": 0.6768549234581843,
+      "macro_recall": 0.6569001906318083,
+      "macro_f1": 0.6389422377571307,
+      "weighted_precision": 0.713379158242412,
+      "weighted_recall": 0.7123655913978495,
+      "weighted_f1": 0.6894311859942945,
+      "split": "Validation"
+    }
+  },
+  "test_results": {
+    "accuracy": 0.774798927613941,
+    "macro_precision": 0.766832165895381,
+    "macro_recall": 0.7190378929349519,
+    "macro_f1": 0.7094643767376381,
+    "weighted_precision": 0.7830207016425965,
+    "weighted_recall": 0.774798927613941,
+    "weighted_f1": 0.7545114187760771,
+    "split": "Test"
+  },
+  "random_seed": 42
+}

@@ -1,0 +1,15 @@
+# Resume data contains personal information.
+/data/
+
+# Generated model artifacts may contain data-derived information and exceed GitHub limits.
+/models/
+
+# Python-generated files
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Notebook-generated files
+.ipynb_checkpoints/
+
